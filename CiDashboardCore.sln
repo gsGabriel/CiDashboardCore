@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5D8D255-A8CA-4FCE-A4F5-94C80FC8F797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiDashboardCore.Web", "src\CiDashboardCore.Web\CiDashboardCore.Web.csproj", "{DBAC630A-43B0-4DFD-B5DA-1625E47EE709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBAC630A-43B0-4DFD-B5DA-1625E47EE709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAC630A-43B0-4DFD-B5DA-1625E47EE709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAC630A-43B0-4DFD-B5DA-1625E47EE709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAC630A-43B0-4DFD-B5DA-1625E47EE709}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBAC630A-43B0-4DFD-B5DA-1625E47EE709} = {D5D8D255-A8CA-4FCE-A4F5-94C80FC8F797}
+	EndGlobalSection
+EndGlobal
