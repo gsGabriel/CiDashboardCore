@@ -23,5 +23,7 @@
   <ItemGroup>
       <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
-
+  <Target Name="DevWebpack" AfterTargets="Compile">   
+    <Exec Command="node node_modules/webpack/bin/webpack.js" />
+  </Target> 
 </Project>
