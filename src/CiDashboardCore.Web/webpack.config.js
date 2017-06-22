@@ -7,10 +7,11 @@ const cssnano = require('cssnano')
 const bundleOutputDir = './wwwroot/dist';
 
 module.exports = {
-  entry:{ 'main': './App/app.js'},
+  entry:{ 'main': './App/app.jsx'},
+  resolve: { extensions: ['.js', '.jsx'] },
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.jsx$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
@@ -49,10 +50,5 @@ module.exports = {
       filename: '[file].map',
       moduleFilenameTemplate: path.relative(bundleOutputDir, '[resourcePath]')
     })
-  ],
-  devServer: {
-    inline: true,
-    contentBase: './public',
-    port: 3333
-  }
+  ]
 }
