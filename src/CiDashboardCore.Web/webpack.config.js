@@ -7,7 +7,7 @@ const cssnano = require('cssnano')
 const bundleOutputDir = './wwwroot/dist';
 
 module.exports = {
-  entry:{ 'main': './App/app.jsx'},
+  entry:{ 'main': './App/startup.jsx'},
   resolve: { extensions: ['.js', '.jsx'] },
   module: {
     loaders: [{
