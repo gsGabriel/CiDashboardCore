@@ -1,7 +1,6 @@
-import 'react-hot-loader/patch';
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader';
+import { AppContainer } from 'react-hot-loader'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Layout from './components/shared/layout'
 import NotFound from './components/shared/notFound'
