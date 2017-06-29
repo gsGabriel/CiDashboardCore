@@ -1,11 +1,14 @@
 import React from 'react'
-import Route from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Layout from './components/shared/layout'
+import NotFound from './components/shared/notFound'
 import Home from './components/home/home'
 
-const routes = 
+export const Routes = () => (
     <Layout>
-        <Route exact path='/' component={ Home } />
-    </Layout>;
-
-export default routes
+        <Switch>
+            <Route exact path='/' component={ Home } />
+            <Route component={ NotFound } />
+        </Switch>
+    </Layout>
+)
