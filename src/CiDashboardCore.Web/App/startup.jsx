@@ -5,28 +5,24 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Layout from './components/shared/layout'
 import NotFound from './components/shared/notFound'
 import Home from './components/home/home'
-import { Routes } from './routes'
+import {Routes} from './routes'
 
-function renderApp() {
- 
-    ReactDOM.render(
-        <AppContainer>
-            <BrowserRouter>
-                <Layout>
-                    <Switch>
-                        <Route exact path='/' component={ Home } />
-                        <Route component={ NotFound } />
-                    </Switch>
-                </Layout>
-            </BrowserRouter>
-        </AppContainer>,
+function renderApp () {
+  ReactDOM.render(
+    <AppContainer>
+      <BrowserRouter>
+        <Layout>
+          <Routes />
+        </Layout>
+      </BrowserRouter>
+    </AppContainer>,
         document.getElementById('react-app')
     )
 }
 
-renderApp();
+renderApp()
 
-//Allow Hot Module Replacement
+// Allow Hot Module Replacement
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept()
 }

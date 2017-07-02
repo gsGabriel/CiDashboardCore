@@ -5,10 +5,8 @@ import NotFound from './components/shared/notFound'
 import Home from './components/home/home'
 
 export const Routes = () => (
-    <Layout>
-        <Switch>
-            <Route exact path='/' component={ Home } />
-            <Route component={ NotFound } />
-        </Switch>
-    </Layout>
+  <Switch>
+    <Route exact path='/' component={Home} />
+    <Route component={NotFound} />
+  </Switch>
 )
